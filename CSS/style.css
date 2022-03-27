@@ -12,6 +12,7 @@ html{
 body{
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
+    font-family:sans-serif;
 }
 h1{
     color:white;
@@ -25,40 +26,43 @@ h2{
     font-weight: 400;
     font-size: 3rem; 
 }
-nav{
+#nav{
     background-color: #0b1336;
     text-transform: uppercase;
-    font-size: 2rem;;
-    padding: 2rem 4rem;
+    font-size: 2rem;
     position: sticky;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
-    ul{
-        list-style: none;
-        padding: 1rem;
-        font-size: 0;
-        display: inline-block;
-        position: relative;
+.navUl{
+    list-style: none;
+    padding: 1rem;
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+}
+.navUlLi{
+    display: inline-block;
+    list-style: none;
+    height: 2rem;
+    text-decoration: none;
     }
-        li{
-            display: inline-block;
-            list-style: none;
-            height: 2rem;
-            text-decoration: none;
-        }
-            a{
-                color: white;
-                text-decoration: none;
-                font-size: 2rem;
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-            a:hover{
-                font-weight: 900;
-                color: rgb(238, 211, 91);
-            }
+.navUlLiA{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    a:hover{
+    font-weight: 900;
+    color: rgb(238, 211, 91);
+    }
+.heightAuto{
+    height: auto;
+}
 .portada{
     width: 100%;
     position: relative;
@@ -187,7 +191,7 @@ footer{
     width: 20%;
 }
 #imgLogo{
-    width: 10%;
+    width: 10rem;
 }
 .timestamp{
     font-weight: 800;
