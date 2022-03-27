@@ -32,6 +32,7 @@ h2{
     font-size: 2rem;
     position: sticky;
     display: flex;
+    text-align: center;
     flex-direction: column;
     align-items: center;
     height: auto;
@@ -42,11 +43,11 @@ h2{
     font-size: 0;
     display: inline-block;
     position: relative;
+    text-decoration: none;
 }
 .navUlLi{
     display: inline-block;
     list-style: none;
-    height: 2rem;
     text-decoration: none;
     }
 .navUlLiA{
