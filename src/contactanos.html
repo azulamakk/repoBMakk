@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto: Bocinas Makk</title>
+	<link rel="icon" type="image/x-icon" href="../img/logo.ico">
+	<link rel="stylesheet" target="_blank" href="../CSS/style.css">
+</head>
+
+<body>
+	<header>
+		<nav id="mainNav">
+			<a href="contactanos.html">
+				<a href="../index.html"><img src="../img/logo.png" alt="Logo de Bocinas Makk" id="imgLogo"></a>
+			</a>
+			<ul>
+				<li>
+					<a href="../index.html">Indice</a>
+				</li>
+				<li>
+					<a href="catalogo.html">Catalogo</a>
+				</li>
+				<li>
+					<a href="historia.html">Historia</a>
+				</li>
+				<li>
+					<a href="nosotros.html">Nosotros</a>
+				</li>
+				<li>
+					<a href="contactanos.html">Contacto</a>
+				</li>
+			</ul>
+		</nav>
+	</header>>
+	<main>
+		<section>
+			<article class="contenedorc">
+				<h1 class="textCenter" >Contactanos</h1>
+				<form action="envio.php" method="post" class="formContacto">
+					<img src="../img/acuerdo.jpg" alt="Foto acuerdo de partes">
+					<fieldset id="medioTransporte">
+						<legend>Medio de transporte de interes</legend>
+						<label for="camiones">Camiones</label>
+						<input type="checkbox" name="camiones" id="camiones" value="camiones">
+						<br>
+						<label for="trenes">Trenes</label>
+						<input type="checkbox" name="trenes" id="trenes" value="trenes">
+						<br>
+						<label for="barcos">Barcos</label>
+						<input type="checkbox" name="barcos" id="barcos" value="barcos">
+						<br>
+						<label for="motos">Motos</label>
+						<input type="checkbox" name="motos" id="motos" value="motos">
+						<br>
+						<label for="Bicicletas">Bicicletas</label>
+						<input type="checkbox" name="bicicletas" id="bicicletas" value="bicicletas">
+						<br>
+						<label for="otros">Otros</label>
+						<input type="checkbox" name="otros" id="otros" value="otros">
+					</fieldset>
+					<fieldset>
+						<legend>Datos personales</legend>
+						<label for="email">Email</label>
+						<input type="email" placeholder="mail@mail.com" name="email" id="email" class="completar">
+						<br>
+						<label for="nombre">Nombre</label>
+						<input type="text" placeholder="Nombre" name="nombre" id="nombre" class="completar">
+						<br>
+						<label for="nombre">Apellido</label>
+						<input type="text" placeholder="Apellido" name="apellido" id="apellido" class="completar">
+						<br>
+						<label for="consulta">Deja tu consulta</label><br>
+						<textarea name="consulta" placeholder="Escribe aqui" id="consulta" class="completar" 
+							rows="10"></textarea>
+						<br>
+					</fieldset>
+					<input type="reset" value="Cancelar" id="botonForm">
+					<input type="submit" value="Enviar" id="botonForm">
+				</form>
+			</article>
+		</section>
+		<a href="https://wa.me/5491162197796" id="whatsapp"><img src="../img/wpp.png" alt="Logo WhatsApp" id="logoWpp">
+			Escribinos por WhatsApp</a>
+	</main>
+	<footer>
+		<p>Todos los derechos reservados</p>
+		<p>E-mail: ventas@bocinasmakk.com.ar</p>
+		<div><a href="../index.html"><img src="../img/logo.png" alt="Logo de Bocinas Makk" id="imgLogo"></a></div>
+	</footer>
+</body>
+
+</html>
