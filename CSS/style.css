@@ -148,6 +148,8 @@ form img{
 }
 #reviewSocios{
     grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
 }
 #footer{
     grid-area: footer;
@@ -223,12 +225,12 @@ footer{
     text-decoration: none;
     color: white;
     padding: 2rem;
-    margin: 4rem;
+    margin: 2rem;
     border-radius: 0.5rem;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: center;
+    display: flex;
     position:static;
-    float: right;
 }
 .introIndex {
     display: flex;
@@ -256,12 +258,15 @@ footer{
 #descarga{
     background-color: wheat;
     font-size: auto;
-    align-items: center;  
-    border-radius: 0%;
-    width: auto;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin: 5%;
+    font-size: 2rem;
+    padding: 2.5rem;
+    border-color: rgb(255, 166, 0);
+    border-width: 0.4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    width: fit-content;
+    display: inline-block;
+    text-decoration: none;
 }
 .imgHistoria{
     width: auto;
@@ -304,7 +309,7 @@ footer{
 .clienteImg{
     align-items: flex-start;
     width: 5rem;
-    border-radius: 5rem;
+    height: 3rem;
 }
 h6{
     font-size: 2rem;
