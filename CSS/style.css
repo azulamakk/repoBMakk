@@ -60,6 +60,10 @@ h2{
     a:hover{
     font-weight: 900;
     color: rgb(238, 211, 91);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
     }
 .hamburguesa{
     border-color: white;
@@ -172,8 +176,7 @@ p{
 .fotoProducto{
     max-width: 70rem;
     width: auto;
-    max-height: 10rem;
-    align-items: center;
+    height: auto;
 }
 footer{
     background-color: #060940;
@@ -254,6 +257,7 @@ footer{
     overflow: auto;
     display: block;
     grid-area: texto;
+    max-width: 70%;
 }
 #descarga{
     background-color: wheat;
@@ -262,11 +266,16 @@ footer{
     padding: 2.5rem;
     border-color: rgb(255, 166, 0);
     border-width: 0.4rem;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-    width: fit-content;
-    display: inline-block;
+    position:static;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-radius: 0.5rem;
+    color: navy;
+    width: 75%;
 }
 .imgHistoria{
     width: auto;
@@ -320,35 +329,47 @@ h6{
     width: 4rem;
     align-self: center;
 }
-.imgNosotros{
-    width: 40%;
-    padding: 1rem;
-    border-radius: 50%;
+.imgNosotross{
+    width: 20rem;
     border-color: white;
-    border-width: 1rem;
-    position: relative;
+    padding-bottom: 2rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    padding: 2rem;
+    border-width: 2rem;
+    border-color: #0a0f6e;
 }
 .txtNosotros{
     text-align: center;
     font-size: 2rem;
     color: white;
-    font-weight: 400;
+    font-weight: 800;
     height: 7rem;
     padding-right: 10rem;
     padding-left: 10rem;
-    padding: 1rem;
+    padding: 4rem;
 }
-#txtVinculo{
-    font-size: 1.5rem;
+.nosotrosTitulos{
+    display: flex;
+    justify-content: center;
+}
+.txtVinculo{
+    font-size: 2rem;
     font-style: italic;
-    color: wheat;
-    font-weight: 200;
+    color: rgb(241, 208, 146);
+    font-weight: 600;
     padding-bottom: 2rem;
+    height: 6rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+    text-align: center;
 }
 .imagenesFlotando{
-    height: 20rem;
-    padding: 2rem;
+    height: 30rem;
+    padding: 4rem;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 .justift-content{
     height: 30rem;
