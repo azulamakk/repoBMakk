@@ -377,6 +377,7 @@ h6{
 }
 @media (min-width:1200px){
     .contenedor{
+        animation: slideUp1200 1s forwards;
         grid-template-columns: 20vw 10vw 60vw 10vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -390,6 +391,7 @@ h6{
 }
 @media (min-width:1024px){
     .contenedor{
+        animation: slideUp1024 1s forwards;
         grid-template-columns: 20vw 70vw 10vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -403,6 +405,7 @@ h6{
 }
 @media (min-width:768px){
     .contenedor{
+        animation: slideUp768 1s forwards;
         grid-template-columns: 20vw 80vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -415,8 +418,9 @@ h6{
         "footer footer";
     }
 }
-@media (max-width:768px){
+@media (max-width:480px){
     .contenedor{
+        animation: slideUp480 1s forwards;
         grid-template-columns: 100vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -437,4 +441,20 @@ h6{
         "texto"
         "footer";
     }
+}
+@keyframes slideUp1200 {
+    0%    { transform: translate3d(0,1200px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp1024 {
+    0%    { transform: translate3d(0,1024px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp768 {
+    0%    { transform: translate3d(0,768px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp480 {
+    0%    { transform: translate3d(0,480px,0); }
+    100%  { transform: translate3d(0,0,0); }
 }
