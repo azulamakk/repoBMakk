@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/azulamakk/repoBMakk/issues"
   },
-  "homepage": "https://github.com/azulamakk/repoBMakk#readme"
+  "homepage": "https://github.com/azulamakk/repoBMakk#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
 }
