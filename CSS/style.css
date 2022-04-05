@@ -118,7 +118,7 @@ form img{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios" "footer";
+    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
 }
 .contenedorh{
     display: grid;
@@ -150,9 +150,19 @@ form img{
 #mapaLocation{
     grid-area: mapaLocation;
 }
-#reviewSocios{
+#reviewSocios1{
     grid-area: reviewSocios;
     display: flex;
+    justify-content: center;
+}
+#reviewSocios2{
+    grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
+}
+#reviewSocios3{
+    grid-area: reviewSocios;
+    min-width: 40rem;
     justify-content: center;
 }
 #footer{
@@ -364,6 +374,9 @@ h6{
     padding-left: 10rem;
     text-align: center;
 }
+.reviewBloque{
+    display: block;
+}
 .imagenesFlotando{
     height: 30rem;
     padding: 4rem;
@@ -385,7 +398,7 @@ h6{
         "header header header header"
         "imgIndexIntro . txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation mapaLocation mapaLocation"
-        "reviewSocios reviewSocios reviewSocios reviewSocios"
+        "reviewSocios1 reviewSocios2 reviewSocios3 ."
         "footer footer footer footer";
     }
 }
@@ -399,7 +412,7 @@ h6{
         "header header header"
         "imgIndexIntro txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation mapaLocation"
-        "reviewSocios reviewSocios reviewSocios"
+        "reviewSocios1 reviewSocios2 reviewSocios3"
         "footer footer footer";
     }
 }
@@ -414,7 +427,9 @@ h6{
         "imgIndexIntro imgIndexIntro"
         "txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation"
-        "reviewSocios reviewSocios"
+        "reviewSocios1 reviewSocios1"
+        "reviewSocios2 reviewSocios2"
+        "reviewSocios3 reviewSocios3"
         "footer footer";
     }
 }
@@ -428,8 +443,10 @@ h6{
         "header"
         "imgIndexIntro"
         "txtIndexIntro"
-        "mapaLocation"s
-        "reviewSocios"
+        "mapaLocation"
+        "reviewSocios1"
+        "reviewSocios2"
+        "reviewSocios3"
         "footer";
     }
     .contenedorh{
