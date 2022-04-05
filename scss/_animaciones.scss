@@ -1,0 +1,16 @@
+@keyframes slideUp1200 {
+    0%    { transform: translate3d(0,1200px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp1024 {
+    0%    { transform: translate3d(0,1024px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp768 {
+    0%    { transform: translate3d(0,768px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}
+@keyframes slideUp480 {
+    0%    { transform: translate3d(0,480px,0); }
+    100%  { transform: translate3d(0,0,0); }
+}

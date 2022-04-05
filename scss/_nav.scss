@@ -1,0 +1,42 @@
+#nav{
+    background-color: #0b1336;
+    text-transform: uppercase;
+    font-size: 2rem;
+    position: sticky;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.navUl{
+    list-style: none;
+    padding: 1rem;
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.navUlLi{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    }
+.navUlLiA{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    a:hover{
+    font-weight: 900;
+    color: rgb(238, 211, 91);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    }
+.hamburguesa{
+    border-color: white;
+}

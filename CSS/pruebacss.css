@@ -1,0 +1,365 @@
+#nav {
+  background-color: #0b1336;
+  text-transform: uppercase;
+  font-size: 2rem;
+  position: sticky;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto; }
+
+.navUl {
+  list-style: none;
+  padding: 1rem;
+  font-size: 0;
+  display: inline-block;
+  position: relative;
+  text-decoration: none; }
+
+.navUlLi {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none; }
+
+.navUlLiA {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+a:hover {
+  font-weight: 900;
+  color: #eed35b;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s; }
+
+.hamburguesa {
+  border-color: white; }
+
+form {
+  background-color: #212547;
+  font-weight: 400;
+  color: aliceblue;
+  text-align: center; }
+
+legend {
+  font-size: 3rem; }
+
+label {
+  font-size: 2rem;
+  color: white;
+  font-weight: 200; }
+
+input {
+  background-color: #464988;
+  border: none;
+  color: white;
+  margin: 1rem; }
+
+textarea {
+  background-color: #464988;
+  border: none;
+  width: 75%;
+  height: 3rem;
+  padding: 1rem;
+  margin: 3rem;
+  color: white;
+  font-weight: 200;
+  scrollbar-color: navy;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 5rem; }
+
+form img {
+  width: 40%;
+  margin: 3rem;
+  padding: auto; }
+
+form img, form input {
+  display: inline; }
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  overflow-y: scroll; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  font-family: sans-serif; }
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4rem; }
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 3rem; }
+
+.heightAuto {
+  height: auto; }
+
+p {
+  color: #b4bec7;
+  line-height: 2rem;
+  font-size: 1.6rem;
+  text-align: center; }
+
+.textCenter {
+  text-align: center; }
+
+.completar {
+  width: 75%; }
+
+.fotoProducto {
+  max-width: 70rem;
+  width: auto;
+  height: auto; }
+
+.width25 {
+  width: 25%;
+  border-radius: 25%; }
+
+.width20per {
+  width: 20%; }
+
+#imgLogo {
+  width: 10rem; }
+
+.timestamp {
+  font-weight: 800;
+  color: wheat;
+  font-size: 3rem;
+  text-align: center; }
+
+.txtPrimary {
+  text-align: center;
+  font-weight: 700;
+  font-size: 4rem;
+  color: wheat; }
+
+.txtSecondary {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #e0ba71; }
+
+#whatsapp {
+  background-color: #2db83d;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  position: static; }
+
+.introIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+img {
+  max-width: 100%;
+  width: 100rem; }
+
+.imgIntro {
+  width: 200rem;
+  padding: 5rem;
+  float: left;
+  clear: both; }
+
+.txtIntro {
+  font-size: 3rem;
+  padding: 5rem;
+  line-height: 4rem;
+  overflow: auto;
+  display: block;
+  grid-area: texto;
+  max-width: 70%; }
+
+#descarga {
+  background-color: wheat;
+  font-size: auto;
+  font-size: 2rem;
+  padding: 2.5rem;
+  border-color: #ffa600;
+  border-width: 0.4rem;
+  position: static;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  border-radius: 0.5rem;
+  color: navy;
+  width: 75%; }
+
+.imgHistoria {
+  width: auto;
+  padding: 2rem;
+  float: left;
+  border-radius: 0%;
+  grid-area: foto; }
+
+#descarga a {
+  color: #0a0f6e;
+  font-weight: 600; }
+
+#descarga a:hover {
+  font-weight: 1000;
+  color: #0b1336; }
+
+#botonForm {
+  background-color: #0a0f6e;
+  font-size: 2rem;
+  color: white;
+  font-weight: 400;
+  padding: 1rem;
+  margin-left: 10rem; }
+
+.cliente {
+  background-color: #0a0f6e;
+  border: #b4bec7;
+  border-width: 1rem;
+  padding: 2rem;
+  width: 20rem;
+  margin: 2rem;
+  float: left;
+  height: 20rem;
+  text-align: end; }
+
+#txtCliente {
+  height: 10rem;
+  margin: 1rem; }
+
+.clienteImg {
+  align-items: flex-start;
+  width: 5rem;
+  height: 3rem; }
+
+h6 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: wheat; }
+
+#logoWpp {
+  width: 4rem;
+  align-self: center; }
+
+.imgNosotross {
+  width: 20rem;
+  border-color: white;
+  padding-bottom: 2rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding: 2rem;
+  border-width: 2rem;
+  border-color: #0a0f6e; }
+
+.txtNosotros {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  height: 7rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding: 4rem; }
+
+.nosotrosTitulos {
+  display: flex;
+  justify-content: center; }
+
+.txtVinculo {
+  font-size: 2rem;
+  font-style: italic;
+  color: #f1d092;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  height: 6rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  text-align: center; }
+
+.reviewBloque {
+  display: block; }
+
+.imagenesFlotando {
+  height: 30rem;
+  padding: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+
+.justift-content {
+  height: 30rem;
+  justify-content: space-around; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+
+.contenedorh {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "foto" "texto" "footer"; }
+
+.contenedorc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "nav" "form" "footer"; }
+
+.formContacto {
+  grid-area: form; }
+
+#mainNav {
+  grid-area: nav; }
+
+#header {
+  grid-area: header; }
+
+#imgIndexIntro {
+  grid-area: imgIndexIntro; }
+
+#txtIndexIntro {
+  grid-area: txtIndexIntro; }
+
+#mapaLocation {
+  grid-area: mapaLocation; }
+
+#reviewSocios1 {
+  grid-area: reviewSocios;
+  display: flex;
+  justify-content: center; }
+
+#reviewSocios2 {
+  grid-area: reviewSocios;
+  display: flex;
+  justify-content: center; }
+
+#reviewSocios3 {
+  grid-area: reviewSocios;
+  min-width: 40rem;
+  justify-content: center; }

@@ -1,0 +1,42 @@
+form{
+    background-color: rgb(33, 37, 71);
+    font-weight: 400;
+    color: aliceblue;
+    text-align: center;
+}
+    legend{
+        font-size: 3rem;
+    }
+    label{
+        font-size: 2rem;
+        color: white;
+        font-weight: 200;
+    }
+    input{
+        background-color: #464988;
+        border: none;
+        color: white;
+        margin: 1rem;
+    }
+    textarea{
+        background-color: #464988;
+        border: none;
+        width: 75%;
+        height: 3rem;
+        padding: 1rem;
+        margin: 3rem;
+        color: white;
+        font-weight: 200;
+        scrollbar-color: navy;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 5rem;
+    }
+form img{
+    width: 40%;
+    margin: 3rem;
+    padding: auto;
+}
+form img, form input{
+    display: inline;
+}

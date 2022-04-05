@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+/*main*/
 *{
     font-family: 'Montserrat', sans-serif; 
     margin: 0;
@@ -26,151 +27,6 @@ h2{
     font-weight: 400;
     font-size: 3rem; 
 }
-#nav{
-    background-color: #0b1336;
-    text-transform: uppercase;
-    font-size: 2rem;
-    position: sticky;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-}
-.navUl{
-    list-style: none;
-    padding: 1rem;
-    font-size: 0;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-}
-.navUlLi{
-    display: inline-block;
-    list-style: none;
-    text-decoration: none;
-    }
-.navUlLiA{
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    }
-    a:hover{
-    font-weight: 900;
-    color: rgb(238, 211, 91);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size 0.3s;
-    }
-.hamburguesa{
-    border-color: white;
-}
-.heightAuto{
-    height: auto;
-}
-.portada{
-    width: 100%;
-    position: relative;
-}
-form{
-    background-color: rgb(33, 37, 71);
-    font-weight: 400;
-    color: aliceblue;
-    text-align: center;
-}
-    legend{
-        font-size: 3rem;
-    }
-    label{
-        font-size: 2rem;
-        color: white;
-        font-weight: 200;
-    }
-    input{
-        background-color: #464988;
-        border: none;
-        color: white;
-        margin: 1rem;
-    }
-    textarea{
-        background-color: #464988;
-        border: none;
-        width: 75%;
-        height: 3rem;
-        padding: 1rem;
-        margin: 3rem;
-        color: white;
-        font-weight: 200;
-        scrollbar-color: navy;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        height: 5rem;
-    }
-form img{
-    width: 40%;
-    margin: 3rem;
-    padding: auto;
-}
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
-}
-.contenedorh{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nav" "foto" "texto" "footer";
-}
-.contenedorc{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: "nav" "form" "footer";
-}
-.formContacto{
-    grid-area: form;
-}
-#mainNav{
-    grid-area: nav;
-}
-#header{
-    grid-area: header;
-}
-#imgIndexIntro{
-    grid-area: imgIndexIntro;
-}
-#txtIndexIntro{
-    grid-area: txtIndexIntro;
-}
-#mapaLocation{
-    grid-area: mapaLocation;
-}
-#reviewSocios1{
-    grid-area: reviewSocios;
-    display: flex;
-    justify-content: center;
-}
-#reviewSocios2{
-    grid-area: reviewSocios;
-    display: flex;
-    justify-content: center;
-}
-#reviewSocios3{
-    grid-area: reviewSocios;
-    min-width: 40rem;
-    justify-content: center;
-}
-#footer{
-    grid-area: footer;
-}
-form img, form input{
-    display: inline;
-}
 p{
     color:#b4bec7;
     line-height: 2rem;
@@ -188,22 +44,6 @@ p{
     width: auto;
     height: auto;
 }
-footer{
-    background-color: #060940;
-    text-align: justify;
-    position: sticky;
-    height: 6.5rem;
-    padding-top: 2rem;
-}
-    h{
-        font-size: 1.5rem;
-        margin: 5rem;
-        color: #b4bec7;
-    }
-    footer div img{
-        float: right;
-        background-color:#060940;
-    }
 .width25{
     width: 25%;
     border-radius: 25%;
@@ -388,6 +228,173 @@ h6{
     height: 30rem;
     justify-content: space-around;
 }
+/*nav*/
+#nav{
+    background-color: #0b1336;
+    text-transform: uppercase;
+    font-size: 2rem;
+    position: sticky;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.navUl{
+    list-style: none;
+    padding: 1rem;
+    font-size: 0;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.navUlLi{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    }
+.navUlLiA{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    }
+    a:hover{
+    font-weight: 900;
+    color: rgb(238, 211, 91);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+    }
+.hamburguesa{
+    border-color: white;
+}
+.heightAuto{
+    height: auto;
+}
+/*header*/
+.portada{
+    width: 100%;
+    position: relative;
+}
+/*form*/
+form{
+    background-color: rgb(33, 37, 71);
+    font-weight: 400;
+    color: aliceblue;
+    text-align: center;
+}
+    legend{
+        font-size: 3rem;
+    }
+    label{
+        font-size: 2rem;
+        color: white;
+        font-weight: 200;
+    }
+    input{
+        background-color: #464988;
+        border: none;
+        color: white;
+        margin: 1rem;
+    }
+    textarea{
+        background-color: #464988;
+        border: none;
+        width: 75%;
+        height: 3rem;
+        padding: 1rem;
+        margin: 3rem;
+        color: white;
+        font-weight: 200;
+        scrollbar-color: navy;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 5rem;
+    }
+form img{
+    width: 40%;
+    margin: 3rem;
+    padding: auto;
+}
+form img, form input{
+    display: inline;
+}
+/*contenedores*/
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
+}
+.contenedorh{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "foto" "texto" "footer";
+}
+.contenedorc{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav" "form" "footer";
+}
+.formContacto{
+    grid-area: form;
+}
+#mainNav{
+    grid-area: nav;
+}
+#header{
+    grid-area: header;
+}
+#imgIndexIntro{
+    grid-area: imgIndexIntro;
+}
+#txtIndexIntro{
+    grid-area: txtIndexIntro;
+}
+#mapaLocation{
+    grid-area: mapaLocation;
+}
+#reviewSocios1{
+    grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
+}
+#reviewSocios2{
+    grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
+}
+#reviewSocios3{
+    grid-area: reviewSocios;
+    min-width: 40rem;
+    justify-content: center;
+}
+#footer{
+    grid-area: footer;
+}
+/*footer*/
+footer{
+    background-color: #060940;
+    text-align: justify;
+    position: sticky;
+    height: 6.5rem;
+    padding-top: 2rem;
+}
+    h{
+        font-size: 1.5rem;
+        margin: 5rem;
+        color: #b4bec7;
+    }
+    footer div img{
+        float: right;
+        background-color:#060940;
+    }
+/*responsive*/
 @media (min-width:1200px){
     .contenedor{
         animation: slideUp1200 1s forwards;
@@ -459,6 +466,7 @@ h6{
         "footer";
     }
 }
+/*animaciones*/
 @keyframes slideUp1200 {
     0%    { transform: translate3d(0,1200px,0); }
     100%  { transform: translate3d(0,0,0); }

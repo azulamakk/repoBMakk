@@ -1,0 +1,71 @@
+@media (min-width:1200px){
+    .contenedor{
+        animation: slideUp1200 1s forwards;
+        grid-template-columns: 20vw 10vw 60vw 10vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "imgIndexIntro . txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation mapaLocation mapaLocation"
+        "reviewSocios1 reviewSocios2 reviewSocios3 ."
+        "footer footer footer footer";
+    }
+}
+@media (min-width:1024px){
+    .contenedor{
+        animation: slideUp1024 1s forwards;
+        grid-template-columns: 20vw 70vw 10vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "imgIndexIntro txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation mapaLocation"
+        "reviewSocios1 reviewSocios2 reviewSocios3"
+        "footer footer footer";
+    }
+}
+@media (min-width:768px){
+    .contenedor{
+        animation: slideUp768 1s forwards;
+        grid-template-columns: 20vw 80vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "imgIndexIntro imgIndexIntro"
+        "txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation"
+        "reviewSocios1 reviewSocios1"
+        "reviewSocios2 reviewSocios2"
+        "reviewSocios3 reviewSocios3"
+        "footer footer";
+    }
+}
+@media (max-width:480px){
+    .contenedor{
+        animation: slideUp480 1s forwards;
+        grid-template-columns: 100vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "imgIndexIntro"
+        "txtIndexIntro"
+        "mapaLocation"
+        "reviewSocios1"
+        "reviewSocios2"
+        "reviewSocios3"
+        "footer";
+    }
+    .contenedorh{
+        grid-template-columns: 100vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "foto"
+        "texto"
+        "footer";
+    }
+}

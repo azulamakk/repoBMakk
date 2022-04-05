@@ -1,0 +1,51 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
+}
+.contenedorh{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "foto" "texto" "footer";
+}
+.contenedorc{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: "nav" "form" "footer";
+}
+.formContacto{
+    grid-area: form;
+}
+#mainNav{
+    grid-area: nav;
+}
+#header{
+    grid-area: header;
+}
+#imgIndexIntro{
+    grid-area: imgIndexIntro;
+}
+#txtIndexIntro{
+    grid-area: txtIndexIntro;
+}
+#mapaLocation{
+    grid-area: mapaLocation;
+}
+#reviewSocios1{
+    grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
+}
+#reviewSocios2{
+    grid-area: reviewSocios;
+    display: flex;
+    justify-content: center;
+}
+#reviewSocios3{
+    grid-area: reviewSocios;
+    min-width: 40rem;
+    justify-content: center;
+}
