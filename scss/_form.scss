@@ -1,3 +1,4 @@
+@import "_variables.scss";
 form{
     background-color: rgb(33, 37, 71);
     font-weight: 400;
@@ -9,13 +10,13 @@ form{
     }
     label{
         font-size: 2rem;
-        color: white;
+        color: $color-secondary;
         font-weight: 200;
     }
     input{
         background-color: #464988;
         border: none;
-        color: white;
+        color: $color-secondary;
         margin: 1rem;
     }
     textarea{
@@ -25,9 +26,9 @@ form{
         height: 3rem;
         padding: 1rem;
         margin: 3rem;
-        color: white;
+        color: $color-secondary;
         font-weight: 200;
-        scrollbar-color: navy;
+        scrollbar-color: $color-primary;
         overflow-y: scroll;
         overflow-x: hidden;
         height: 5rem;
