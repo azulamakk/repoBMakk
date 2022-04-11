@@ -189,6 +189,12 @@ h6{
     border-width: 2rem;
     border-color: #0a0f6e;
 }
+#marginNosotros{
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 4rem;
+    height: auto;
+}
 .txtNosotros{
     text-align: center;
     font-size: 2rem;

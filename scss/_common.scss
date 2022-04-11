@@ -1,8 +1,8 @@
 @import "_variables.scss";
 *{
     font-family: 'Montserrat', sans-serif; 
-    margin: 0;
-	padding: 0;
+    @include p-m(0px , 0px);
+    @include maintext(auto, 1.4em, auto, auto);
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -190,6 +190,12 @@ h6{
     padding: 2rem;
     border-width: 2rem;
     border-color: #0a0f6e;
+}
+#marginNosotros{
+    margin-left: 25%;
+    margin-right: 25%;
+    line-height: 4rem;
+    height: auto;
 }
 .txtNosotros{
     text-align: center;

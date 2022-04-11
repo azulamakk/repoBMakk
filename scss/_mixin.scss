@@ -1,0 +1,15 @@
+@mixin p-m($padding,$margin) {
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin maintext($size, $line, $color) {
+    font-size: $size;
+    line-height: $line;
+    color: $color;
+    font-family: "Montserrat";
+}
+
+@mixin borderradius(){
+    border-radius: 10px;
+}
