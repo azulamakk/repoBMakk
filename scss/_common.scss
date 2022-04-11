@@ -127,6 +127,7 @@ p{
     margin-right: 15rem;
     border-radius: 0.5rem;
     color: $color-primary;
+    box-shadow: map-get($map: $shadow,$key: 'sh3');
     width: 75%;
 }
 .imgHistoria{

@@ -13,3 +13,10 @@
 @mixin borderradius(){
     border-radius: 10px;
 }
+
+$shadow: (
+    'sh1': 0px 2px 8px rgb(11, 11, 81),
+    'sh2': 2px 2px 16px 2px rgb(8, 8, 177),
+    'sh3': 2px 2px 4px rgb(173, 142, 30),
+    'sh4': 2px 2px 4px blue
+)

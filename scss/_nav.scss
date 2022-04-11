@@ -11,6 +11,7 @@
     height: auto;
 }
 .navUl{
+    
     list-style: none;
     padding: 1rem;
     font-size: 0;
@@ -19,13 +20,12 @@
     text-decoration: none;
 }
 .navUlLi{
-    display: inline-block;
+    @extend .navUl;
     list-style: none;
-    text-decoration: none;
     }
 .navUlLiA{
+    @extend .navUlLi;
     color: $color-secondary;
-    text-decoration: none;
     font-size: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
