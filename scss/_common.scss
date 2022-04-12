@@ -2,7 +2,7 @@
 *{
     font-family: 'Montserrat', sans-serif; 
     @include p-m(0px , 0px);
-    @include maintext(auto, 1.4em, auto, auto);
+    @include maintext(auto, 1.4em, auto);
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -108,7 +108,7 @@ p{
     line-height: 4rem;
     overflow: auto;
     display: block;
-    grid-area: texto;
+    grid-area: 'texto';
     max-width: 70%;
 }
 #descarga{
@@ -135,7 +135,7 @@ p{
     padding: 2rem;
     float: left;
     border-radius: 0%;
-    grid-area: foto;
+    grid-area: 'foto';
 }
 #descarga a{
     color: #0a0f6e;

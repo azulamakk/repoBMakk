@@ -9,7 +9,7 @@
   align-items: center;
   height: auto; }
 
-.navUl {
+.navUl, .navUlLi, .navUlLiA {
   list-style: none;
   padding: 1rem;
   font-size: 0;
@@ -17,14 +17,11 @@
   position: relative;
   text-decoration: none; }
 
-.navUlLi {
-  display: inline-block;
-  list-style: none;
-  text-decoration: none; }
+.navUlLi, .navUlLiA {
+  list-style: none; }
 
 .navUlLiA {
   color: white;
-  text-decoration: none;
   font-size: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem; }
@@ -84,8 +81,12 @@ form img, form input {
 
 * {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  font-size: auto;
+  line-height: 1.4em;
+  color: auto;
+  font-family: "Montserrat";
   overflow: hidden;
   overflow-y: scroll; }
 
@@ -191,7 +192,7 @@ img {
   line-height: 4rem;
   overflow: auto;
   display: block;
-  grid-area: texto;
+  grid-area: 'texto';
   max-width: 70%; }
 
 #descarga {
@@ -210,6 +211,7 @@ img {
   margin-right: 15rem;
   border-radius: 0.5rem;
   color: navy;
+  box-shadow: 2px 2px 4px #ad8e1e;
   width: 75%; }
 
 .imgHistoria {
@@ -217,7 +219,7 @@ img {
   padding: 2rem;
   float: left;
   border-radius: 0%;
-  grid-area: foto; }
+  grid-area: 'foto'; }
 
 #descarga a {
   color: #0a0f6e;
@@ -274,6 +276,12 @@ h6 {
   border-width: 2rem;
   border-color: #0a0f6e; }
 
+#marginNosotros {
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 4rem;
+  height: auto; }
+
 .txtNosotros {
   text-align: center;
   font-size: 2rem;
@@ -313,23 +321,9 @@ h6 {
   height: 30rem;
   justify-content: space-around; }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
-
-.contenedorh {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "nav" "foto" "texto" "footer"; }
-
-.contenedorc {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-  grid-template-areas: "nav" "form" "footer"; }
+.portada {
+  width: 100%;
+  position: relative; }
 
 .formContacto {
   grid-area: form; }
@@ -363,3 +357,96 @@ h6 {
   grid-area: reviewSocios;
   min-width: 40rem;
   justify-content: center; }
+
+@keyframes slideUp1200 {
+  0% {
+    transform: translate3d(0, 1200px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideUp1024 {
+  0% {
+    transform: translate3d(0, 1024px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideUp768 {
+  0% {
+    transform: translate3d(0, 768px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes slideUp480 {
+  0% {
+    transform: translate3d(0, 480px, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+footer {
+  background-color: #060940;
+  text-align: justify;
+  position: sticky;
+  height: 6.5rem;
+  padding-top: 2rem; }
+
+h {
+  font-size: 1.5rem;
+  margin: 5rem;
+  color: #b4bec7; }
+
+footer div img {
+  float: right;
+  background-color: #060940; }
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+
+.contenedorh {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "foto" "texto" "footer"; }
+
+.contenedorc {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas: "nav" "form" "footer"; }
+
+#imgIndexIntro {
+  grid-area: 'foto'; }
+
+@media (min-width: 1200px) {
+  .contenedor {
+    animation: slideUp1200 1s forwards;
+    grid-template-columns: 20vw 10vw 60vw 10vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3 ." "footer footer footer footer"; } }
+
+@media (min-width: 1024px) {
+  .contenedor {
+    animation: slideUp1024 1s forwards;
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer"; } }
+
+@media (min-width: 768px) {
+  .contenedor {
+    animation: slideUp768 1s forwards;
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav" "header header" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1 reviewSocios1" "reviewSocios2 reviewSocios2" "reviewSocios3 reviewSocios3" "footer footer"; } }
+
+@media (max-width: 480px) {
+  .contenedor {
+    animation: slideUp480 1s forwards;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "header" "imgIndexIntro" "txtIndexIntro" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+  .contenedorh {
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav" "foto" "texto" "footer"; } }

@@ -1,21 +1,3 @@
-.contenedor{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
-}
-.contenedorh{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nav" "foto" "texto" "footer";
-}
-.contenedorc{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    grid-template-areas: "nav" "form" "footer";
-}
 .formContacto{
     grid-area: form;
 }
