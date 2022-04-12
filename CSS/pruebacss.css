@@ -7,7 +7,8 @@
   text-align: center;
   flex-direction: column;
   align-items: center;
-  height: auto; }
+  height: auto;
+  grid-area: nav; }
 
 .navUl, .navUlLi, .navUlLiA {
   list-style: none;
@@ -41,7 +42,8 @@ form {
   background-color: #212547;
   font-weight: 400;
   color: aliceblue;
-  text-align: center; }
+  text-align: center;
+  grid-area: form; }
 
 legend {
   font-size: 3rem; }
@@ -321,14 +323,12 @@ h6 {
   height: 30rem;
   justify-content: space-around; }
 
-.portada {
+#header {
+  grid-area: header;
   width: 100%;
   position: relative; }
 
-.formContacto {
-  grid-area: form; }
-
-#mainNav {
+#nav {
   grid-area: nav; }
 
 #header {
@@ -387,7 +387,8 @@ footer {
   text-align: justify;
   position: sticky;
   height: 6.5rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  grid-area: footer; }
 
 h {
   font-size: 1.5rem;
