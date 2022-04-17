@@ -309,8 +309,29 @@ h6 {
   padding-left: 10rem;
   text-align: center; }
 
+.txtNombre {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+  padding: 2rem; }
+
 .reviewBloque {
-  display: block; }
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#reviewSocios1 {
+  margin: auto;
+  padding-left: 20rem; }
+
+#reviewSocios2 {
+  margin: auto;
+  padding: auto; }
+
+#reviewSocios3 {
+  margin: auto;
+  padding-right: auto; }
 
 .imagenesFlotando {
   height: 30rem;
@@ -441,7 +462,7 @@ footer div img {
     grid-template-rows: auto;
     grid-template-areas: "nav nav" "header header" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1 reviewSocios1" "reviewSocios2 reviewSocios2" "reviewSocios3 reviewSocios3" "footer footer"; } }
 
-@media (max-width: 480px) {
+@media (min-width: 480px) {
   .contenedor {
     animation: slideUp480 1s forwards;
     grid-template-columns: 100vw;
