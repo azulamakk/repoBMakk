@@ -38,6 +38,11 @@ a:hover {
 .hamburguesa {
   border-color: white; }
 
+#header {
+  grid-area: header;
+  width: 100%;
+  position: relative; }
+
 form {
   background-color: #212547;
   font-weight: 400;
@@ -344,10 +349,22 @@ h6 {
   height: 30rem;
   justify-content: space-around; }
 
-#header {
-  grid-area: header;
-  width: 100%;
-  position: relative; }
+footer {
+  background-color: #060940;
+  text-align: justify;
+  position: sticky;
+  height: 6.5rem;
+  padding-top: 2rem;
+  grid-area: footer; }
+
+h {
+  font-size: 1.5rem;
+  margin: 5rem;
+  color: #b4bec7; }
+
+footer div img {
+  float: right;
+  background-color: #060940; }
 
 #nav {
   grid-area: nav; }
@@ -403,24 +420,7 @@ h6 {
   100% {
     transform: translate3d(0, 0, 0); } }
 
-footer {
-  background-color: #060940;
-  text-align: justify;
-  position: sticky;
-  height: 6.5rem;
-  padding-top: 2rem;
-  grid-area: footer; }
-
-h {
-  font-size: 1.5rem;
-  margin: 5rem;
-  color: #b4bec7; }
-
-footer div img {
-  float: right;
-  background-color: #060940; }
-
-.contenedor {
+#contenedor {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -441,28 +441,28 @@ footer div img {
 #imgIndexIntro {
   grid-area: 'foto'; }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .contenedor {
     animation: slideUp1200 1s forwards;
     grid-template-columns: 20vw 10vw 60vw 10vw;
     grid-template-rows: auto;
     grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3 ." "footer footer footer footer"; } }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .contenedor {
     animation: slideUp1024 1s forwards;
     grid-template-columns: 20vw 70vw 10vw;
     grid-template-rows: auto;
     grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer"; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .contenedor {
     animation: slideUp768 1s forwards;
     grid-template-columns: 20vw 80vw;
     grid-template-rows: auto;
     grid-template-areas: "nav nav" "header header" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1 reviewSocios1" "reviewSocios2 reviewSocios2" "reviewSocios3 reviewSocios3" "footer footer"; } }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
   .contenedor {
     animation: slideUp480 1s forwards;
     grid-template-columns: 100vw;
