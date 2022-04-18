@@ -14,17 +14,17 @@
     grid-area: mapaLocation;
 }
 #reviewSocios1{
-    grid-area: reviewSocios;
+    grid-area: reviewSocios1;
     display: flex;
     justify-content: center;
 }
 #reviewSocios2{
-    grid-area: reviewSocios;
+    grid-area: reviewSocios2;
     display: flex;
     justify-content: center;
 }
 #reviewSocios3{
-    grid-area: reviewSocios;
-    min-width: 40rem;
+    grid-area: reviewSocios3;
+    display: flex;
     justify-content: center;
 }

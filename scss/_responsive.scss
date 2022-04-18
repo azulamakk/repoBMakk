@@ -19,56 +19,9 @@
 #imgIndexIntro{
     grid-area: 'foto';
 }
-@media (max-width:1200px){
-    .contenedor{
-        animation: slideUp1200 1s forwards;
-        grid-template-columns: 20vw 10vw 60vw 10vw;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "nav nav nav nav"
-        "header header header header"
-        "imgIndexIntro . txtIndexIntro txtIndexIntro"
-        "mapaLocation mapaLocation mapaLocation mapaLocation"
-        "reviewSocios1 reviewSocios2 reviewSocios3 ."
-        "footer footer footer footer";
-    }
-}
-@media (max-width:1024px){
-    .contenedor{
-        animation: slideUp1024 1s forwards;
-        grid-template-columns: 20vw 70vw 10vw;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "nav nav nav"
-        "header header header"
-        "imgIndexIntro txtIndexIntro txtIndexIntro"
-        "mapaLocation mapaLocation mapaLocation"
-        "reviewSocios1 reviewSocios2 reviewSocios3"
-        "footer footer footer";
-    }
-}
-@media (max-width:768px){
-    .contenedor{
-        animation: slideUp768 1s forwards;
-        grid-template-columns: 20vw 80vw;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "nav nav"
-        "header header"
-        "imgIndexIntro imgIndexIntro"
-        "txtIndexIntro txtIndexIntro"
-        "mapaLocation mapaLocation"
-        "reviewSocios1 reviewSocios1"
-        "reviewSocios2 reviewSocios2"
-        "reviewSocios3 reviewSocios3"
-        "footer footer";
-    }
-}
 @media (max-width:480px){
     .contenedor{
         animation: slideUp480 1s forwards;
-        grid-template-columns: 100vw;
-        grid-template-rows: auto;
         grid-template-areas: 
         "nav"
         "header"
@@ -88,5 +41,48 @@
         "foto"
         "texto"
         "footer";
+    }
+}
+@media (max-width:768px){
+    .contenedor{
+        animation: slideUp768 1s forwards;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "nav nav"
+        "header header"
+        "imgIndexIntro imgIndexIntro"
+        "txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation"
+        "reviewSocios1"
+        "reviewSocios2"
+        "reviewSocios3"
+        "footer footer";
+    }
+}
+@media (max-width:1024px){
+    .contenedor{
+        animation: slideUp1024 1s forwards;
+        grid-template-areas: 
+        "nav nav nav"
+        "header header header"
+        "imgIndexIntro txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation mapaLocation"
+        "reviewSocios1 . reviewSocios2"
+        ". reviewSocios3 ."
+        "footer footer footer";
+    }
+}
+@media (max-width:1400px){
+    .contenedor{
+        animation: slideUp1200 1s forwards;
+        grid-template-columns: 20vw 10vw 60vw 10vw;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "imgIndexIntro . txtIndexIntro txtIndexIntro"
+        "mapaLocation mapaLocation mapaLocation mapaLocation"
+        "reviewSocios1 reviewSocios2 reviewSocios3"
+        "footer footer footer footer";
     }
 }
