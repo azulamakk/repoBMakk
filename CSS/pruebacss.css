@@ -132,10 +132,15 @@ p {
 .completar {
   width: 75%; }
 
+.custom-toggler.navbar-toggler {
+  border-color: #9c7b0e;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
 .fotoProducto {
   max-width: 70rem;
   width: auto;
-  height: auto; }
+  height: auto;
+  min-width: 30rem; }
 
 .width25 {
   width: 25%;
@@ -327,6 +332,10 @@ h6 {
   align-items: center;
   max-width: 75%; }
 
+#hamburguesa {
+  border-color: #a1821a;
+  border-width: 1rem; }
+
 #reviewSocios1 {
   min-width: 50rem;
   max-width: 50rem;
@@ -381,6 +390,9 @@ footer div img {
 #header {
   grid-area: header; }
 
+#tituloEmpresa {
+  grid-area: tituloEmpresa; }
+
 #imgIndexIntro {
   grid-area: imgIndexIntro; }
 
@@ -404,6 +416,27 @@ footer div img {
   grid-area: reviewSocios3;
   display: flex;
   justify-content: center; }
+
+#producto1 {
+  grid-area: producto1; }
+
+#producto2 {
+  grid-area: producto2; }
+
+#producto3 {
+  grid-area: producto3; }
+
+#producto4 {
+  grid-area: producto4; }
+
+#producto5 {
+  grid-area: producto5; }
+
+#producto6 {
+  grid-area: producto6; }
+
+#producto7 {
+  grid-area: producto7; }
 
 @keyframes slideUp1200 {
   0% {
@@ -433,7 +466,7 @@ footer div img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+  grid-template-areas: "nav" "header" "tituloEmpresa" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
 
 .contenedorh {
   display: grid;
@@ -453,7 +486,7 @@ footer div img {
 @media (max-width: 480px) {
   .contenedor {
     animation: slideUp480 1s forwards;
-    grid-template-areas: "nav" "header" "imgIndexIntro" "txtIndexIntro" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+    grid-template-areas: "nav" "header" "tituloEmpresa" "imgIndexIntro" "txtIndexIntro" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
   .contenedorh {
     grid-template-columns: 100vw;
     grid-template-rows: auto;
@@ -463,16 +496,16 @@ footer div img {
   .contenedor {
     animation: slideUp768 1s forwards;
     grid-template-columns: auto;
-    grid-template-areas: "nav nav" "header header" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer footer"; } }
+    grid-template-areas: "nav nav" "header header" "tituloEmpresa tituloEmpresa" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer footer"; } }
 
 @media (max-width: 1024px) {
   .contenedor {
     animation: slideUp1024 1s forwards;
-    grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; } }
+    grid-template-areas: "nav nav nav" "header header header" ". tituloEmpresa ." "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; } }
 
 @media (max-width: 1400px) {
   .contenedor {
     animation: slideUp1200 1s forwards;
     grid-template-columns: 20vw 10vw 60vw 10vw;
     grid-template-rows: auto;
-    grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; } }
+    grid-template-areas: "nav nav nav nav" "header header header header" ". tituloEmpresa tituloEmpresa ." "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; } }

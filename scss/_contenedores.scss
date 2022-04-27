@@ -4,6 +4,9 @@
 #header{
     grid-area: header;
 }
+#tituloEmpresa{
+    grid-area: tituloEmpresa;
+}
 #imgIndexIntro{
     grid-area: imgIndexIntro;
 }
@@ -27,4 +30,25 @@
     grid-area: reviewSocios3;
     display: flex;
     justify-content: center;
+}
+#producto1{
+    grid-area: producto1;
+}
+#producto2{
+    grid-area: producto2;
+}
+#producto3{
+    grid-area: producto3;
+}
+#producto4{
+    grid-area: producto4;
+}
+#producto5{
+    grid-area: producto5;
+}
+#producto6{
+    grid-area: producto6;
+}
+#producto7{
+    grid-area: producto7;
 }
