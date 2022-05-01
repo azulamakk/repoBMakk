@@ -140,9 +140,7 @@ p {
   max-width: 70rem;
   width: auto;
   height: auto;
-  min-width: 30rem; 
-  position:sticky;
-}
+  min-width: 30rem; }
 
 .width25 {
   width: 25%;
@@ -197,6 +195,7 @@ img {
 .imgIntro {
   width: 200rem;
   padding: 5rem;
+  float: left;
   clear: both; }
 
 .txtIntro {
@@ -230,6 +229,7 @@ img {
 .imgHistoria {
   width: auto;
   padding: 2rem;
+  float: left;
   border-radius: 0%;
   grid-area: 'foto'; }
 
@@ -256,6 +256,7 @@ img {
   padding: 2rem;
   width: 20rem;
   margin: 2rem;
+  float: left;
   height: 20rem;
   text-align: end; }
 
@@ -424,25 +425,32 @@ footer div img {
   grid-area: descarga; }
 
 #producto1 {
-  grid-area: producto1; }
+  grid-area: producto1;
+  position: sticky; }
 
 #producto2 {
-  grid-area: producto2; }
+  grid-area: producto2;
+  position: sticky; }
 
 #producto3 {
-  grid-area: producto3; }
+  grid-area: producto3;
+  position: sticky; }
 
 #producto4 {
-  grid-area: producto4; }
+  grid-area: producto4;
+  position: sticky; }
 
 #producto5 {
-  grid-area: producto5; }
+  grid-area: producto5;
+  position: sticky; }
 
 #producto6 {
-  grid-area: producto6; }
+  grid-area: producto6;
+  position: sticky; }
 
 #producto7 {
-  grid-area: producto7; }
+  grid-area: producto7;
+  position: sticky; }
 
 #txtHistoria1 {
   grid-area: txtHistoria1; }
