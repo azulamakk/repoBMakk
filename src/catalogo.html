@@ -16,12 +16,12 @@
 	<link rel="stylesheet" target="_blank" href="../CSS/pruebacss.css">
 </head>
 
-<body>
+<body class="contenedorProductos">
 	<header>
 		<nav id="nav" class="navbar navbar-expand-lg" >
 			<div class="container-fluid">
 			  <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="Logo Bocinas Makk" id="imgLogo"></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler" id="hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navUl navUlLi navUlLiA"></span>
 			  </button>
 			  <div class="collapse navbar-collapse justify-content-end heightAuto" id="navbarNav">
@@ -47,24 +47,26 @@
 		  </nav>
 	</header>
 	<main>
-		<section class="contenedorc">
+		<section>
 			<article>
 				<div>
 					<a id="descarga" href="../img/catalogo.pdf">Descarga nuestro catalogo</a>
 				</div>
 				<h1 class="textCenter">Catalogo</h1>
 				<div class="imagenesFlotando">
-					<img src="../img/producto1.png" alt="Producto 1" id="producto1" class="fotoProducto" data-aos="fade-up">
-					<img src="../img/producto2.png" alt="Producto 2" id="producto2" class="fotoProducto" data-aos="fade-down">
-					<img src="../img/producto3.png" alt="Producto 3" id="producto3" class="fotoProducto" data-aos="fade-right">
+					<img src="../img/producto1.png" alt="Producto 1" id="producto1" class="col fotoProducto" data-aos="fade-up">
+					<img src="../img/producto2.png" alt="Producto 2" id="producto2" class="col fotoProducto" data-aos="fade-down">
+					<img src="../img/producto3.png" alt="Producto 3" id="producto3" class="col fotoProducto" data-aos="fade-right">
 				</div>
+				<div id="txtCatalogo">
 				<h2 class="txtPrimary">Todo lo que buscas para tu vehiculo</h2>
 				<h3 class="txtSecondary">En un solo lugar</h3>
+				</div>
 				<div class="imagenesFlotando">
-					<img src="../img/producto4.png" alt="Producto 4" id="producto4" class="fotoProducto" data-aos="fade-left">
-					<img src="../img/producto5.png" alt="Producto 5" id="producto5" class="fotoProducto" data-aos="fade-up-right">
-					<img src="../img/producto6.png" alt="Producto 6" id="producto6" class="fotoProducto" data-aos="fade-up-left">
-					<img src="../img/producto7.png" alt="Producto 7" id="producto7" class="fotoProducto" data-aos="fade-down-right">
+					<img src="../img/producto4.png" alt="Producto 4" id="producto4" class="col fotoProducto" data-aos="fade-left">
+					<img src="../img/producto5.png" alt="Producto 5" id="producto5" class="col fotoProducto" data-aos="fade-up-right">
+					<img src="../img/producto6.png" alt="Producto 6" id="producto6" class="col fotoProducto" data-aos="fade-up-left">
+					<img src="../img/producto7.png" alt="Producto 7" id="producto7" class="col fotoProducto" data-aos="fade-down-right">
 				</div>
 				<hr>
 		</section>

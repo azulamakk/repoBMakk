@@ -1,14 +1,15 @@
+
 #contenedor{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "header" "tituloEmpresa" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
+    grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
 }
 .contenedorh{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "foto" "texto" "footer";
+    grid-template-areas: "nav" "fotoHistoria1" "txtHistoria1" "fotoHistoria2" "txtHistoria2" "fotoHistoria3" "txtHistoria3" "footer";
 }
 .contenedorc{
     display: grid;
@@ -25,7 +26,6 @@
         grid-template-areas: 
         "nav"
         "header"
-        "tituloEmpresa"
         "imgIndexIntro"
         "txtIndexIntro"
         "mapaLocation"
@@ -43,6 +43,19 @@
         "texto"
         "footer";
     }
+    .contenedorh{
+        animation: slideUp768 1s forwards;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "nav" 
+        "fotoHistoria1" 
+        "txtHistoria1" 
+        "fotoHistoria2" 
+        "txtHistoria2" 
+        "fotoHistoria3" 
+        "txtHistoria3" 
+        "footer";
+    }
 }
 @media (max-width:768px){
     .contenedor{
@@ -51,7 +64,6 @@
         grid-template-areas: 
         "nav nav"
         "header header"
-        "tituloEmpresa tituloEmpresa"
         "imgIndexIntro imgIndexIntro"
         "txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation"
@@ -60,6 +72,19 @@
         "reviewSocios3"
         "footer footer";
     }
+    .contenedorh{
+        animation: slideUp768 1s forwards;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "nav ." 
+        "fotoHistoria1 ." 
+        "txtHistoria1 ." 
+        "fotoHistoria2 ." 
+        "txtHistoria2 ." 
+        "fotoHistoria3 ." 
+        "txtHistoria3 ." 
+        "footer .";
+    }
 }
 @media (max-width:1024px){
     .contenedor{
@@ -67,7 +92,6 @@
         grid-template-areas: 
         "nav nav nav"
         "header header header"
-        ". tituloEmpresa ."
         "imgIndexIntro txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation mapaLocation"
         "reviewSocios1 . reviewSocios2"
@@ -83,7 +107,6 @@
         grid-template-areas: 
         "nav nav nav nav"
         "header header header header"
-        ". tituloEmpresa tituloEmpresa ."
         "imgIndexIntro . txtIndexIntro txtIndexIntro"
         "mapaLocation mapaLocation mapaLocation mapaLocation"
         "reviewSocios1 reviewSocios2 reviewSocios3"

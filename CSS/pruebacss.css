@@ -140,7 +140,9 @@ p {
   max-width: 70rem;
   width: auto;
   height: auto;
-  min-width: 30rem; }
+  min-width: 30rem; 
+  position:sticky;
+}
 
 .width25 {
   width: 25%;
@@ -195,7 +197,6 @@ img {
 .imgIntro {
   width: 200rem;
   padding: 5rem;
-  float: left;
   clear: both; }
 
 .txtIntro {
@@ -229,7 +230,6 @@ img {
 .imgHistoria {
   width: auto;
   padding: 2rem;
-  float: left;
   border-radius: 0%;
   grid-area: 'foto'; }
 
@@ -256,7 +256,6 @@ img {
   padding: 2rem;
   width: 20rem;
   margin: 2rem;
-  float: left;
   height: 20rem;
   text-align: end; }
 
@@ -385,7 +384,8 @@ footer div img {
   background-color: #060940; }
 
 #nav {
-  grid-area: nav; }
+  grid-area: nav;
+  display: flex; }
 
 #header {
   grid-area: header; }
@@ -417,6 +417,12 @@ footer div img {
   display: flex;
   justify-content: center; }
 
+#txtCatalogo {
+  grid-area: txtCatalogo; }
+
+#descarga {
+  grid-area: descarga; }
+
 #producto1 {
   grid-area: producto1; }
 
@@ -437,6 +443,24 @@ footer div img {
 
 #producto7 {
   grid-area: producto7; }
+
+#txtHistoria1 {
+  grid-area: txtHistoria1; }
+
+#txtHistoria2 {
+  grid-area: txtHistoria2; }
+
+#txtHistoria3 {
+  grid-area: txtHistoria3; }
+
+#fotoHistoria1 {
+  grid-area: fotoHistoria1; }
+
+#fotoHistoria2 {
+  grid-area: fotoHistoria2; }
+
+#fotoHistoria3 {
+  grid-area: fotoHistoria3; }
 
 @keyframes slideUp1200 {
   0% {
@@ -466,13 +490,13 @@ footer div img {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "header" "tituloEmpresa" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+  grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
 
 .contenedorh {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "nav" "foto" "texto" "footer"; }
+  grid-template-areas: "nav" "fotoHistoria1" "txtHistoria1" "fotoHistoria2" "txtHistoria2" "fotoHistoria3" "txtHistoria3" "footer"; }
 
 .contenedorc {
   display: grid;
@@ -486,26 +510,34 @@ footer div img {
 @media (max-width: 480px) {
   .contenedor {
     animation: slideUp480 1s forwards;
-    grid-template-areas: "nav" "header" "tituloEmpresa" "imgIndexIntro" "txtIndexIntro" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
+    grid-template-areas: "nav" "header" "imgIndexIntro" "txtIndexIntro" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
   .contenedorh {
     grid-template-columns: 100vw;
     grid-template-rows: auto;
-    grid-template-areas: "nav" "foto" "texto" "footer"; } }
+    grid-template-areas: "nav" "foto" "texto" "footer"; }
+  .contenedorh {
+    animation: slideUp768 1s forwards;
+    grid-template-columns: 1;
+    grid-template-areas: "nav"  "fotoHistoria1"  "txtHistoria1"  "fotoHistoria2"  "txtHistoria2"  "fotoHistoria3"  "txtHistoria3"  "footer"; } }
 
 @media (max-width: 768px) {
   .contenedor {
     animation: slideUp768 1s forwards;
     grid-template-columns: auto;
-    grid-template-areas: "nav nav" "header header" "tituloEmpresa tituloEmpresa" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer footer"; } }
+    grid-template-areas: "nav nav" "header header" "imgIndexIntro imgIndexIntro" "txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer footer"; }
+  .contenedorh {
+    animation: slideUp768 1s forwards;
+    grid-template-columns: 1;
+    grid-template-areas: "nav ."  "fotoHistoria1 ."  "txtHistoria1 ."  "fotoHistoria2 ."  "txtHistoria2 ."  "fotoHistoria3 ."  "txtHistoria3 ."  "footer ."; } }
 
 @media (max-width: 1024px) {
   .contenedor {
     animation: slideUp1024 1s forwards;
-    grid-template-areas: "nav nav nav" "header header header" ". tituloEmpresa ." "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; } }
+    grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; } }
 
 @media (max-width: 1400px) {
   .contenedor {
     animation: slideUp1200 1s forwards;
     grid-template-columns: 20vw 10vw 60vw 10vw;
     grid-template-rows: auto;
-    grid-template-areas: "nav nav nav nav" "header header header header" ". tituloEmpresa tituloEmpresa ." "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; } }
+    grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; } }

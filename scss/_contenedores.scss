@@ -1,5 +1,6 @@
 #nav{
     grid-area: nav;
+    display: flex;
 }
 #header{
     grid-area: header;
@@ -31,6 +32,12 @@
     display: flex;
     justify-content: center;
 }
+#txtCatalogo{
+    grid-area: txtCatalogo;
+}
+#descarga{
+    grid-area: descarga;
+}
 #producto1{
     grid-area: producto1;
 }
@@ -51,4 +58,22 @@
 }
 #producto7{
     grid-area: producto7;
+}
+#txtHistoria1{
+    grid-area: txtHistoria1;
+}
+#txtHistoria2{
+    grid-area: txtHistoria2;
+}
+#txtHistoria3{
+    grid-area: txtHistoria3;
+}
+#fotoHistoria1{
+    grid-area: fotoHistoria1;
+}
+#fotoHistoria2{
+    grid-area: fotoHistoria2;
+}
+#fotoHistoria3{
+    grid-area: fotoHistoria3;
 }
