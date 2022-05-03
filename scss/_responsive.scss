@@ -1,5 +1,5 @@
 
-#contenedor{
+.contenedor{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -56,6 +56,9 @@
         "txtHistoria3" 
         "footer";
     }
+    .txtIntro{
+        font-size: 1rem;
+    }
 }
 @media (max-width:768px){
     .contenedor{
@@ -76,14 +79,17 @@
         animation: slideUp768 1s forwards;
         grid-template-columns: 1;
         grid-template-areas: 
-        "nav ." 
-        "fotoHistoria1 ." 
-        "txtHistoria1 ." 
-        "fotoHistoria2 ." 
-        "txtHistoria2 ." 
-        "fotoHistoria3 ." 
-        "txtHistoria3 ." 
-        "footer .";
+        "nav nav" 
+        "fotoHistoria1 fotoHistoria1" 
+        "txtHistoria1 txtHistoria1" 
+        "fotoHistoria2 fotoHistoria1" 
+        "txtHistoria2 txtHistoria2" 
+        "fotoHistoria3 fotoHistoria3" 
+        "txtHistoria3 txtHistoria3" 
+        "footer footer";
+    }
+    .txtIntro{
+        font-size: 1.5rem;
     }
 }
 @media (max-width:1024px){
@@ -98,6 +104,18 @@
         ". reviewSocios3 ."
         "footer footer footer";
     }
+    .contenedorh{
+        animation: slideUp1024 1s forwards;
+        grid-template-areas: 
+        "nav nav" 
+        "fotoHistoria1 txtHistoria1" 
+        "fotoHistoria2 txtHistoria2" 
+        "fotoHistoria3 txtHistoria3" 
+        "footer footer";
+    }
+    .txtIntro{
+        font-size: 2rem;
+    }
 }
 @media (max-width:1400px){
     .contenedor{
@@ -111,5 +129,17 @@
         "mapaLocation mapaLocation mapaLocation mapaLocation"
         "reviewSocios1 reviewSocios2 reviewSocios3"
         "footer footer footer footer";
+    }
+    .contenedorh{
+        animation: slideUp1024 1s forwards;
+        grid-template-areas: 
+        "nav nav nav" 
+        "fotoHistoria1 txtHistoria1 txtHistoria1" 
+        "fotoHistoria2 txtHistoria2 txtHistoria2" 
+        "fotoHistoria3 txtHistoria3 txtHistoria3" 
+        "footer footer footer";
+    }
+    .txtIntro{
+        font-size: 3rem;
     }
 }

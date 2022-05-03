@@ -108,8 +108,7 @@ p{
     clear:both;
 }
 .txtIntro {
-    font-size: 3rem;
-    padding: 5rem;
+    padding: 5%;
     line-height: 4rem;
     overflow: auto;
     display: block;
@@ -136,7 +135,7 @@ p{
     width: 75%;
 }
 .imgHistoria{
-    width: auto;
+    max-width: 25rem;
     padding: 2rem;
     float: left;
     border-radius: 0%;

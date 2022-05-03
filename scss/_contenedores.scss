@@ -10,9 +10,13 @@
 }
 #imgIndexIntro{
     grid-area: imgIndexIntro;
+    display: flex;
+    justify-content: center;
 }
 #txtIndexIntro{
     grid-area: txtIndexIntro;
+    display: flex;
+    justify-content: center;
 }
 #mapaLocation{
     grid-area: mapaLocation;
@@ -40,47 +44,66 @@
 }
 #producto1{
     grid-area: producto1;
-    position: sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto2{
     grid-area: producto2;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto3{
     grid-area: producto3;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto4{
     grid-area: producto4;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto5{
     grid-area: producto5;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto6{
     grid-area: producto6;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #producto7{
     grid-area: producto7;
-    position:sticky;
+    display: flex;
+    justify-content: center;
 }
 #txtHistoria1{
     grid-area: txtHistoria1;
+    display: flex;
+    justify-content: center;
 }
 #txtHistoria2{
     grid-area: txtHistoria2;
+    display: flex;
+    justify-content: center;
 }
 #txtHistoria3{
     grid-area: txtHistoria3;
+    display: flex;
+    justify-content: center;
 }
 #fotoHistoria1{
     grid-area: fotoHistoria1;
+    display: flex;
+    justify-content: center;
 }
 #fotoHistoria2{
     grid-area: fotoHistoria2;
+    display: flex;
+    justify-content: center;
 }
 #fotoHistoria3{
     grid-area: fotoHistoria3;
+    display: flex;
+    justify-content: center;
 }

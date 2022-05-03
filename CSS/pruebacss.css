@@ -199,8 +199,7 @@ img {
   clear: both; }
 
 .txtIntro {
-  font-size: 3rem;
-  padding: 5rem;
+  padding: 5%;
   line-height: 4rem;
   overflow: auto;
   display: block;
@@ -227,7 +226,7 @@ img {
   width: 75%; }
 
 .imgHistoria {
-  width: auto;
+  max-width: 25rem;
   padding: 2rem;
   float: left;
   border-radius: 0%;
@@ -395,10 +394,14 @@ footer div img {
   grid-area: tituloEmpresa; }
 
 #imgIndexIntro {
-  grid-area: imgIndexIntro; }
+  grid-area: imgIndexIntro;
+  display: flex;
+  justify-content: center; }
 
 #txtIndexIntro {
-  grid-area: txtIndexIntro; }
+  grid-area: txtIndexIntro;
+  display: flex;
+  justify-content: center; }
 
 #mapaLocation {
   grid-area: mapaLocation; }
@@ -426,49 +429,68 @@ footer div img {
 
 #producto1 {
   grid-area: producto1;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto2 {
   grid-area: producto2;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto3 {
   grid-area: producto3;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto4 {
   grid-area: producto4;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto5 {
   grid-area: producto5;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto6 {
   grid-area: producto6;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #producto7 {
   grid-area: producto7;
-  position: sticky; }
+  display: flex;
+  justify-content: center; }
 
 #txtHistoria1 {
-  grid-area: txtHistoria1; }
+  grid-area: txtHistoria1;
+  display: flex;
+  justify-content: center; }
 
 #txtHistoria2 {
-  grid-area: txtHistoria2; }
+  grid-area: txtHistoria2;
+  display: flex;
+  justify-content: center; }
 
 #txtHistoria3 {
-  grid-area: txtHistoria3; }
+  grid-area: txtHistoria3;
+  display: flex;
+  justify-content: center; }
 
 #fotoHistoria1 {
-  grid-area: fotoHistoria1; }
+  grid-area: fotoHistoria1;
+  display: flex;
+  justify-content: center; }
 
 #fotoHistoria2 {
-  grid-area: fotoHistoria2; }
+  grid-area: fotoHistoria2;
+  display: flex;
+  justify-content: center; }
 
 #fotoHistoria3 {
-  grid-area: fotoHistoria3; }
+  grid-area: fotoHistoria3;
+  display: flex;
+  justify-content: center; }
 
 @keyframes slideUp1200 {
   0% {
@@ -494,7 +516,7 @@ footer div img {
   100% {
     transform: translate3d(0, 0, 0); } }
 
-#contenedor {
+.contenedor {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -526,7 +548,9 @@ footer div img {
   .contenedorh {
     animation: slideUp768 1s forwards;
     grid-template-columns: 1;
-    grid-template-areas: "nav"  "fotoHistoria1"  "txtHistoria1"  "fotoHistoria2"  "txtHistoria2"  "fotoHistoria3"  "txtHistoria3"  "footer"; } }
+    grid-template-areas: "nav"  "fotoHistoria1"  "txtHistoria1"  "fotoHistoria2"  "txtHistoria2"  "fotoHistoria3"  "txtHistoria3"  "footer"; }
+  .txtIntro {
+    font-size: 1rem; } }
 
 @media (max-width: 768px) {
   .contenedor {
@@ -536,16 +560,28 @@ footer div img {
   .contenedorh {
     animation: slideUp768 1s forwards;
     grid-template-columns: 1;
-    grid-template-areas: "nav ."  "fotoHistoria1 ."  "txtHistoria1 ."  "fotoHistoria2 ."  "txtHistoria2 ."  "fotoHistoria3 ."  "txtHistoria3 ."  "footer ."; } }
+    grid-template-areas: "nav nav"  "fotoHistoria1 fotoHistoria1"  "txtHistoria1 txtHistoria1"  "fotoHistoria2 fotoHistoria1"  "txtHistoria2 txtHistoria2"  "fotoHistoria3 fotoHistoria3"  "txtHistoria3 txtHistoria3"  "footer footer"; }
+  .txtIntro {
+    font-size: 1.5rem; } }
 
 @media (max-width: 1024px) {
   .contenedor {
     animation: slideUp1024 1s forwards;
-    grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; } }
+    grid-template-areas: "nav nav nav" "header header header" "imgIndexIntro txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation" "reviewSocios1 . reviewSocios2" ". reviewSocios3 ." "footer footer footer"; }
+  .contenedorh {
+    animation: slideUp1024 1s forwards;
+    grid-template-areas: "nav nav"  "fotoHistoria1 txtHistoria1"  "fotoHistoria2 txtHistoria2"  "fotoHistoria3 txtHistoria3"  "footer footer"; }
+  .txtIntro {
+    font-size: 2rem; } }
 
 @media (max-width: 1400px) {
   .contenedor {
     animation: slideUp1200 1s forwards;
     grid-template-columns: 20vw 10vw 60vw 10vw;
     grid-template-rows: auto;
-    grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; } }
+    grid-template-areas: "nav nav nav nav" "header header header header" "imgIndexIntro . txtIndexIntro txtIndexIntro" "mapaLocation mapaLocation mapaLocation mapaLocation" "reviewSocios1 reviewSocios2 reviewSocios3" "footer footer footer footer"; }
+  .contenedorh {
+    animation: slideUp1024 1s forwards;
+    grid-template-areas: "nav nav nav"  "fotoHistoria1 txtHistoria1 txtHistoria1"  "fotoHistoria2 txtHistoria2 txtHistoria2"  "fotoHistoria3 txtHistoria3 txtHistoria3"  "footer footer footer"; }
+  .txtIntro {
+    font-size: 3rem; } }
