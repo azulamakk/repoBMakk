@@ -363,6 +363,11 @@ h6 {
   display: flex;
   justify-content: space-around; }
 
+.introContacto {
+  height: auto;
+  font-weight: 600;
+  font-size: 2rem; }
+
 .justift-content {
   height: 30rem;
   justify-content: space-around; }
@@ -516,13 +521,13 @@ footer div img {
   100% {
     transform: translate3d(0, 0, 0); } }
 
-.contenedor {
+#contenedor {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer"; }
 
-.contenedorh {
+#contenedorh {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;

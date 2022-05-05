@@ -1,11 +1,11 @@
 
-.contenedor{
+#contenedor{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "nav" "header" "txtIntroIndex" "imgIntroIndex" "mapaLocation" "reviewSocios1" "reviewSocios2" "reviewSocios3" "footer";
 }
-.contenedorh{
+#contenedorh{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
